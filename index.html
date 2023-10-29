@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Page accueil</title>
+    <link rel="icon" href="zed.png" type="images/x-icon" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <!--Début de la Navbar-->
+
+
+            <a href="#" class="logo">Maki esports</a>
+            <div class="nav-links">
+                <span class="item">Accueil</span>
+                <span class="item select"><a href="calculatrice.html">Calculatrice</a></span>
+            </div>
+            <div class="nav-buttons" id="navmenu">
+                <button class="nav-btn selected"><a href="login.html">Créer</a></button>
+                <button class="nav-btn selected"><a href="inscrit.html">Inscrit-toi</a></button>
+                <button class="nav-btn selected"><a href="portofolio.html">Portofolio Maki</a></button>
+                <button class="nav-btn selected"><a href="2.html">New page</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin de la Navbar -->
+    <!-- Début de la side bar -->
+
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <img src="logo.png" alt="" class="sidebar-logo">
+            </header>
+
+            <nav class="sidebar-menu">
+                <button type="button">
+                    <i class='bx bx-home'></i>
+                    <span><a href="index.html">Accueil</a></span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-user'></i>
+                    <span><a href="login.html">Compte</a></span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bx-cog'></i>
+                    <span><a href="calculatrice.html"></a></span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-user'></i>
+                    <span><a href="inscrit.html">inscrit</a></span>
+                </button>
+                <button type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord-filled"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M14.983 3l.123 .006c2.014 .214 3.527 .672 4.966 1.673a1 1 0 0 1 .371 .488c1.876 5.315 2.373 9.987 1.451 12.28c-1.003 2.005 -2.606 3.553 -4.394 3.553c-.732 0 -1.693 -.968 -2.328 -2.045a21.512 21.512 0 0 0 2.103 -.493a1 1 0 1 0 -.55 -1.924c-3.32 .95 -6.13 .95 -9.45 0a1 1 0 0 0 -.55 1.924c.717 .204 1.416 .37 2.103 .494c-.635 1.075 -1.596 2.044 -2.328 2.044c-1.788 0 -3.391 -1.548 -4.428 -3.629c-.888 -2.217 -.39 -6.89 1.485 -12.204a1 1 0 0 1 .371 -.488c1.439 -1.001 2.952 -1.459 4.966 -1.673a1 1 0 0 1 .935 .435l.063 .107l.651 1.285l.137 -.016a12.97 12.97 0 0 1 2.643 0l.134 .016l.65 -1.284a1 1 0 0 1 .754 -.54l.122 -.009zm-5.983 7a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15zm6 0a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15z"
+                            stroke-width="0" fill="currentColor"></path>
+                    </svg>
+                    <span><a href="2.html">New page</a></span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-speaker'></i>
+                    <span>Audio</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bx-music'></i>
+                    <span>Music</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-folder'></i>
+                    <span>Dossier</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-layer'></i>
+                    <span>Layer</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-lock'></i>
+                    <span>Lock Compte</span>
+                </button>
+            </nav>
+
+
+        </div>
+    </nav>
+
+
+    <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+    <!-- Fin de la sidebar -->
+
+    <!--top container-->
+
+    <div class="top-container">
+        <div class="info-box">
+            <h1>What is Lorem Ipsum?</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+    <!-- Fin de la top container -->
+
+
+
+
+
+
+
+</body>
+
+</html>
